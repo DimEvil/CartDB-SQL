@@ -1,0 +1,7 @@
+Query to reproduce atlas maps
+
+SELECT the_geom_webmercator, count (*) FROM breeding_birds_cartodb
+WHERE scientificname = n'Anas creca'
+group BY the_geom_webmercator
+
+
